@@ -1,0 +1,87 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "**" # triggered on every file change
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "**" # triggered on every file change
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Write decryption key 🔐
+        run: echo "${{ secrets.key }}" > key.txt
+
+      - name: Unpack bundle 📦
+        run: |
+          ./unpack_bundle.sh
+          rm key.txt
+
+      - name: Move site content to root 📂
+        run: |
+          echo "Moving unpacked site from lifeintheuk/ to repo root..."
+          rm -rf lifeintheuk/.github
+          rm -f lifeintheuk/key.txt
+          shopt -s dotglob  # Include hidden files like .gitignore
+          mv lifeintheuk/* .
+          rm -rf lifeintheuk
+
+      - name: Setup Ruby 💎
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.5"
+          bundler-cache: true
+
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip" # caching pip dependencies
+
+      - name: Update _config.yml ⚙️
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          commitChange: false
+          valueFile: "_config.yml"
+          propertyPath: "giscus.repo"
+          value: ${{ github.repository }}
+
+      - name: Install and Build 🔧
+        run: |
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+
+      - name: Purge unused CSS 🧹
+        run: |
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
+
+      - name: Check site content
+        run: |
+          ls _site
+          rm -fr _site/blob.tar.gz.enc.part-*
+
+      - name: Deploy 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site
