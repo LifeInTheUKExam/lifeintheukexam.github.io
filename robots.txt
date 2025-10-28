@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /timeline/
 
-Sitemap: https://alshedivat.github.io/sitemap.xml
+Sitemap: https://testlifeuk.co.uk/sitemap.xml
