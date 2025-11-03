@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /timeline
 
-Sitemap: https://testlifeuk.co.uk/sitemap.xml
+Sitemap: https://litut.uk/sitemap.xml
