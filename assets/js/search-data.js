@@ -8,12 +8,7 @@ ninja.data = [
     },
     {
       title: 'Timeline',
-      handler: () => { window.location.href = "/course/" }
-    },
-    {
-      section: 'Life in the UK',
-      title: 'Becoming a Resident or Citizen',
-      handler: () => { window.location.href = "/chapters/uk-values-and-principles/" }
+      handler: () => { window.location.href = "/timeline/" }
     },
     {
       section: 'Life in the UK',
@@ -22,8 +17,8 @@ ninja.data = [
     },
     {
       section: 'Life in the UK',
-      title: 'The Citizenship Pledge',
-      handler: () => { window.location.href = "/chapters/uk-values-and-principles/" }
+      title: 'Life in the UK Test',
+      handler: () => { window.location.href = "/chapters/life-in-the-uk-test/" }
     },
     {
       section: 'Life in the UK',
@@ -32,137 +27,172 @@ ninja.data = [
     },
     {
       section: 'Life in the UK',
-      title: 'Becoming a Permanent Resident',
-      handler: () => { window.location.href = "/chapters/uk-values-and-principles/" }
+      title: 'What is the UK?',
+      handler: () => { window.location.href = "/chapters/what-is-the-uk/" }
     },
     {
-      section: 'History',
-      title: 'A Long and Illustrious History',
-      handler: () => { window.location.href = "/chapters/a-long-and-illustrious-history/" }
+      section: 'Early Peoples and the Making of the Kingdoms',
+      title: 'Early Britain and the Romans',
+      handler: () => { window.location.href = "/chapters/early-britain-and-the-romans/" }
     },
     {
-      section: 'History',
-      title: 'Early Britain',
-      handler: () => { window.location.href = "/chapters/early-britain/" }
+      section: 'Early Peoples and the Making of the Kingdoms',
+      title: 'Anglo-Saxons, Vikings, and Norman conquest',
+      handler: () => { window.location.href = "/chapters/anglo-saxons-vikings-and-norman-conquest/" }
     },
     {
-      section: 'History',
-      title: 'The Middle Ages',
-      handler: () => { window.location.href = "/chapters/the-middle-ages/" }
+      section: 'Early Peoples and the Making of the Kingdoms',
+      title: 'Medieval Britain',
+      handler: () => { window.location.href = "/chapters/medieval-britain/" }
     },
     {
-      section: 'History',
-      title: 'The Tudors and Stuarts',
-      handler: () => { window.location.href = "/chapters/the-tudors-and-stuarts/" }
+      section: 'Tudors, Stuarts, and the Rise of Parliament',
+      title: 'The Tudors and the Stuarts - Religious Conflicts',
+      handler: () => { window.location.href = "/chapters/the-tudors-and-the-stuarts-religious-conflicts/" }
     },
     {
-      section: 'History',
-      title: 'A Global Power',
-      handler: () => { window.location.href = "/chapters/a-global-power/" }
+      section: 'Tudors, Stuarts, and the Rise of Parliament',
+      title: 'Exploration, Poetry and Drama',
+      handler: () => { window.location.href = "/chapters/exploration-poetry-and-drama/" }
     },
     {
-      section: 'History',
-      title: 'The 20th Century',
-      handler: () => { window.location.href = "/chapters/the-20th-century/" }
+      section: 'Tudors, Stuarts, and the Rise of Parliament',
+      title: 'The English Civil War and the Glorious Revolution',
+      handler: () => { window.location.href = "/chapters/the-english-civil-war-and-the-glorious-revolution/" }
     },
     {
-      section: 'History',
-      title: 'Britain Since 1945',
-      handler: () => { window.location.href = "/chapters/britain-since-1945/" }
+      section: 'Constitutional Britain, Empire, and the Industrial Age',
+      title: 'Constitutional Monarchy and Early 18th Century Britain',
+      handler: () => { window.location.href = "/chapters/constitutional-monarchy-and-early-18th-century-britain/" }
     },
     {
-      section: 'Modern UK',
-      title: 'A Modern, Thriving Country',
-      handler: () => { window.location.href = "/chapters/a-modern-thriving-country/" }
+      section: 'Constitutional Britain, Empire, and the Industrial Age',
+      title: 'The Enlightenment and Industrial Revolution',
+      handler: () => { window.location.href = "/chapters/the-enlightenment-and-industrial-revolution/" }
     },
     {
-      section: 'Modern UK',
+      section: 'Constitutional Britain, Empire, and the Industrial Age',
+      title: 'The American War of Independence and the Victorian Age',
+      handler: () => { window.location.href = "/chapters/the-american-war-of-independence-and-the-victorian-age/" }
+    },
+    {
+      section: 'Constitutional Britain, Empire, and the Industrial Age',
+      title: 'Ireland and Britain in the 19th Century',
+      handler: () => { window.location.href = "/chapters/ireland-and-britain-in-the-19th-century/" }
+    },
+    {
+      section: 'Britain in the 20th Century',
+      title: 'First World War and Inter-War Years',
+      handler: () => { window.location.href = "/chapters/first-world-war-and-inter-war-years/" }
+    },
+    {
+      section: 'Britain in the 20th Century',
+      title: 'The Second World War',
+      handler: () => { window.location.href = "/chapters/the-second-world-war/" }
+    },
+    {
+      section: 'Britain in the 20th Century',
+      title: 'Post WWII Britain',
+      handler: () => { window.location.href = "/chapters/post-wwii-britain/" }
+    },
+    {
+      section: 'Britain in the 20th Century',
+      title: 'Social Changes in 1960s Britain',
+      handler: () => { window.location.href = "/chapters/social-changes-in-1960s-britain/" }
+    },
+    {
+      section: 'Britain in the 20th Century',
+      title: 'UK from Margaret Thatcher to Brexit',
+      handler: () => { window.location.href = "/chapters/uk-from-margaret-thatcher-to-brexit/" }
+    },
+    {
+      section: 'A modern, thriving society',
       title: 'The UK Today',
       handler: () => { window.location.href = "/chapters/the-uk-today/" }
     },
     {
-      section: 'Modern UK',
-      title: 'Religion',
-      handler: () => { window.location.href = "/chapters/religion/" }
+      section: 'A modern, thriving society',
+      title: 'Religion and Festivals in the UK',
+      handler: () => { window.location.href = "/chapters/religion-and-festivals-in-the-uk/" }
     },
     {
-      section: 'Modern UK',
-      title: 'Customs and Traditions',
-      handler: () => { window.location.href = "/chapters/customs-and-traditions/" }
+      section: 'A modern, thriving society',
+      title: 'Sport in the UK',
+      handler: () => { window.location.href = "/chapters/sport-in-the-uk/" }
     },
     {
-      section: 'Modern UK',
-      title: 'Sport',
-      handler: () => { window.location.href = "/chapters/sport/" }
+      section: 'A modern, thriving society',
+      title: 'Arts and Culture in the UK',
+      handler: () => { window.location.href = "/chapters/arts-and-culture-in-the-uk/" }
     },
     {
-      section: 'Modern UK',
-      title: 'Arts and Culture',
-      handler: () => { window.location.href = "/chapters/arts-and-culture/" }
-    },
-    {
-      section: 'Modern UK',
-      title: 'Leisure',
-      handler: () => { window.location.href = "/chapters/leisure/" }
-    },
-    {
-      section: 'Government',
-      title: 'The Government, the Law and Your Role',
-      handler: () => { window.location.href = "/chapters/the-government-the-law-and-your-role/" }
-    },
-    {
-      section: 'Government',
-      title: 'The Development of British Democracy',
-      handler: () => { window.location.href = "/chapters/the-development-of-british-democracy/" }
-    },
-    {
-      section: 'Government',
-      title: 'The Government',
-      handler: () => { window.location.href = "/chapters/the-government/" }
-    },
-    {
-      section: 'Government',
-      title: 'The UK and International Institutions',
-      handler: () => { window.location.href = "/chapters/the-uk-and-international-institutions/" }
-    },
-    {
-      section: 'Government',
+      section: 'A modern, thriving society',
       title: 'Respecting the Law',
       handler: () => { window.location.href = "/chapters/respecting-the-law/" }
     },
     {
-      section: 'Government',
-      title: 'The Role of the Police',
-      handler: () => { window.location.href = "/chapters/the-role-of-the-police/" }
+      section: 'A modern, thriving society',
+      title: 'Architecture, Design, and Literature in the UK',
+      handler: () => { window.location.href = "/chapters/architecture-design-and-literature-in-the-uk/" }
     },
     {
-      section: 'Government',
-      title: 'Legal System',
-      handler: () => { window.location.href = "/chapters/legal-system/" }
+      section: 'A modern, thriving society',
+      title: 'British Leisure',
+      handler: () => { window.location.href = "/chapters/british-leisure/" }
     },
     {
-      section: 'Government',
-      title: 'Fundamental Principles',
-      handler: () => { window.location.href = "/chapters/fundamental-principles/" }
+      section: 'A modern, thriving society',
+      title: 'UK Landmarks',
+      handler: () => { window.location.href = "/chapters/uk-landmarks/" }
     },
     {
-      section: 'Government',
-      title: 'Your Role in the Community',
+      section: 'The UK Government and the Law',
+      title: 'British Democracy and the Monarchy',
       handler: () => { window.location.href = "/chapters/your-role-in-the-community/" }
     },
     {
-      section: 'Government',
-      title: 'Voting',
-      handler: () => { window.location.href = "/chapters/voting/" }
+      section: 'The UK Government and the Law',
+      title: 'UK Parliament and Elections',
+      handler: () => { window.location.href = "/chapters/uk-parliament-and-elections/" }
     },
     {
-      section: 'Government',
-      title: 'Contacting Elected Representatives',
-      handler: () => { window.location.href = "/chapters/contacting-elected-representatives/" }
+      section: 'The UK Government and the Law',
+      title: 'The UK Government',
+      handler: () => { window.location.href = "/chapters/the-uk-government/" }
     },
     {
-      section: 'Government',
-      title: 'Other Ways to Support Democratic Participation',
-      handler: () => { window.location.href = "/chapters/other-ways-to-support-democratic-participation/" }
+      section: 'The UK Government and the Law',
+      title: 'Devolved Governments and Media in the UK',
+      handler: () => { window.location.href = "/chapters/devolved-governments-and-media-in-the-uk/" }
+    },
+    {
+      section: 'The UK Government and the Law',
+      title: 'Voting in the UK',
+      handler: () => { window.location.href = "/chapters/voting-in-the-uk/" }
+    },
+    {
+      section: 'The UK Government and the Law',
+      title: 'The UK and International Organisations',
+      handler: () => { window.location.href = "/chapters/the-uk-and-international-organisations/" }
+    },
+    {
+      section: 'The UK Government and the Law',
+      title: 'UK Laws',
+      handler: () => { window.location.href = "/chapters/uk-laws/" }
+    },
+    {
+      section: 'The UK Government and the Law',
+      title: 'The Role of the Courts',
+      handler: () => { window.location.href = "/chapters/the-role-of-the-courts/" }
+    },
+    {
+      section: 'The UK Government and the Law',
+      title: 'Fundamental Principles and Responsibilities in the UK',
+      handler: () => { window.location.href = "/chapters/fundamental-principles-and-responsibilities-in-the-uk/" }
+    },
+    {
+      section: 'The UK Government and the Law',
+      title: 'Your Role in the Community',
+      handler: () => { window.location.href = "/chapters/your-role-in-the-community/" }
     }
 ];
