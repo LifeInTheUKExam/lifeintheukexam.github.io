@@ -4,12 +4,12 @@
         "@graph": [
             
                     {"@type":"BreadcrumbList","@id":"https://litut.uk/course/#breadcrumbList","itemListElement":[
-                        {"@type":"ListItem",
-                         "item": {"@id":"https://litut.uk#listItem","position":1,"name":"Home"},
-                         "nextItem": {"@type":"ListItem", "item": {"@id": "https://litut.uk/course/#listItem", "name": "Course"}}
+                        {"@type":"ListItem", "position": 1,
+                         "item": {"@id":"https://litut.uk#listItem","name":"Home"},
+                         "nextItem": {"@type":"ListItem", "position": 2, "item": {"@id": "https://litut.uk/course/#listItem", "name": "Course"}}
                         },
-                        {"@type":"ListItem","item": {"@id": "https://litut.uk/course/#listItem","position":2,"name":"Course"},
-                         "previousItem": {"@type":"ListItem", "item": {"@id": "https://litut.uk#listItem", "name": "Home"}}
+                        {"@type":"ListItem", "position": 2, "item": {"@id": "https://litut.uk/course/#listItem", "name":"Course"},
+                         "previousItem": {"@type":"ListItem", "position": 1, "item": {"@id": "https://litut.uk#listItem", "name": "Home"}}
                         }
                     ]},
                 
@@ -37,7 +37,7 @@
                "breadcrumb" : {
                   "@id" : "https://litut.uk/course/#breadcrumbList"
                },
-               "dateModified" : "2025-12-02T09:43:40+00:00",
+               "dateModified" : "2025-12-03T09:45:46+00:00",
                "datePublished" : "2025-10-22T09:27:23+00:00",
                "description": "Life In The UK Test FREE course materials including study guides and practice tests to help you prepare for the official exam.",
                "image" : {
